@@ -5,8 +5,9 @@ Type a circuit idea on the phone, review its breadboard schematic and assembly s
 The Android app includes the circuit designer, the Python circuit API contract, and the native AR viewer. Physical alignment must still be verified on an ARCore-capable phone. The Unity project remains in the repository as an optional alternative renderer, not as the launcher's required AR module.
 
 
-
-<img width="296" height="640" alt="breadboard2" src="https://github.com/user-attachments/assets/2dda44ea-6049-4c7a-926f-64647addc13e" />
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;">
+  <img width="296" height="640" alt="breadboard2" src="https://github.com/user-attachments/assets/2dda44ea-6049-4c7a-926f-64647addc13e" />
+</div>
 
 
 
