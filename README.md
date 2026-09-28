@@ -4,6 +4,13 @@ Type a circuit idea on the phone, review its breadboard schematic and assembly s
 
 The Android app includes the circuit designer, the Python circuit API contract, and the native AR viewer. Physical alignment must still be verified on an ARCore-capable phone. The Unity project remains in the repository as an optional alternative renderer, not as the launcher's required AR module.
 
+
+
+<img width="296" height="640" alt="breadboard2" src="https://github.com/user-attachments/assets/2dda44ea-6049-4c7a-926f-64647addc13e" />
+
+
+
+
 ## Native AR viewing
 
 Tap **Calibrate**, hold the whole breadboard in view, then tap its detected outline. Once the app says **Board calibrated**, move slowly around it. Calibration uses measured image corners and does not require a stable ARCore world map. The circuit stays on the board side chosen at calibration (not compass north). A visually verified ARCore anchor can maintain placement when the contour is lost during an orbit. If that anchor disagrees with the visible board or reports an implausible jump, rendering falls back to measured board poses without failing calibration. Keep the physical board stationary and visible while visual fallback is in use. If both visual measurements and a trusted world pose are unavailable, the overlay hides until visual tracking recovers.
